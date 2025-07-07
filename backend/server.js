@@ -3,6 +3,8 @@ const express = require('express');
 
 const app = express();
 
+app.get("/tickets", (req, res) => {
+    res.send('Sever is ready');
 app.listen(5000, () => {
-    console.log('Server started at http://localhost:5000 hello world');
+    console.log('Server started at http://localhost:5000);
 });
